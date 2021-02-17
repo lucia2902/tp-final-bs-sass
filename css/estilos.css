@@ -1,0 +1,166 @@
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Raleway:wght@600&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  background: linear-gradient(#7DC8CC, #F6F6F7);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+/* nav */
+.header__nav {
+  margin-right: 6rem; }
+  .header__nav li {
+    padding: 1rem;
+    font-family: "nunito", sans-serif;
+    text-transform: uppercase; }
+    .header__nav li a {
+      color: #F6F6F7 !important;
+      transition: transform .2s; }
+      .header__nav li a:hover {
+        color: #7DC8CC !important;
+        background-color: #f6f6f7b9;
+        padding: 10px;
+        border-radius: 15px;
+        transform: scale(1.5); }
+
+/* index */
+.main__content .main__content__slogan {
+  color: #7DC8CC;
+  font-family: "raleway", sans-serif;
+  font-size: 3rem; }
+  @media screen and (max-width: 600px) {
+    .main__content .main__content__slogan {
+      font-size: 2rem; } }
+
+.main__content img {
+  margin: auto; }
+
+/* nosotros */
+.description .description__text h1 {
+  font-family: "nunito", sans-serif;
+  font-size: 2rem;
+  color: #F6F6F7;
+  text-transform: uppercase; }
+
+.description .description__text p {
+  font-family: "raleway", sans-serif; }
+
+.description img {
+  height: 450px; }
+  @media screen and (max-width: 500px) {
+    .description img {
+      display: none; } }
+
+/* productos */
+.galery video {
+  width: 80%; }
+
+.galery img {
+  width: 80%; }
+
+.gallery__photos {
+  padding-bottom: 20px; }
+
+.gallery__photos img {
+  padding-bottom: 30px; }
+  .gallery__photos img:hover {
+    box-shadow: 0 0 10px #F6F6F7; }
+
+/* sucursales */
+.sucursales img {
+  height: 300px;
+  margin-left: 10%; }
+
+.sucursales h1 {
+  color: #F6F6F7;
+  text-transform: uppercase;
+  font-family: "nunito", sans-serif;
+  font-size: 2rem; }
+
+.sucursales ul {
+  font-family: "raleway", sans-serif;
+  list-style: none; }
+  .sucursales ul .sucursales__list-title {
+    font-size: 25px; }
+
+/* contacto */
+form {
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 500px) {
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+
+.datosPersonales {
+  display: flex;
+  flex-direction: row;
+  margin: 10px; }
+  @media screen and (max-width: 500px) {
+    .datosPersonales {
+      margin-left: 20%; } }
+  @media screen and (max-width: 400px) {
+    .datosPersonales {
+      margin-left: 15%; } }
+  .datosPersonales label {
+    margin-right: 10px; }
+  .datosPersonales select {
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin-left: 10px; }
+  .datosPersonales input {
+    border-radius: 10px;
+    border: none;
+    padding: 5px; }
+
+.datosPersonales, .campoComentarios p {
+  font-family: "raleway", sans-serif; }
+
+.formulario h1 {
+  font-family: "nunito", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #F6F6F7;
+  margin-left: 25%; }
+  @media screen and (max-width: 500px) {
+    .formulario h1 {
+      margin-left: 30%; } }
+
+@media screen and (max-width: 500px) {
+  .campoComentarios {
+    margin-left: 20%; } }
+
+@media screen and (max-width: 400px) {
+  .campoComentarios {
+    margin-left: 15%; } }
+
+.campoComentarios p {
+  margin-bottom: 10px; }
+
+.campoComentarios textarea {
+  border-radius: 10px;
+  border: none; }
+
+.campoComentarios button {
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 7px;
+  font-family: "raleway", sans-serif;
+  height: 30px;
+  width: 60px; }
+
+/* footer */
+.fa-instagram, .fa-facebook, .fa-whatsapp {
+  font-size: 30px;
+  padding: 0 2rem 0 2rem;
+  color: #7DC8CC;
+  transition: transform .2s; }
+  .fa-instagram:hover, .fa-facebook:hover, .fa-whatsapp:hover {
+    transform: scale(1.5); }

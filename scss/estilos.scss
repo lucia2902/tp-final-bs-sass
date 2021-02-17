@@ -1,0 +1,209 @@
+/* variables */
+$color-primary:#7DC8CC;
+$color-secondary:#F6F6F7;
+$font-primary: 'nunito', sans-serif;
+$font-secondary: 'raleway', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Raleway:wght@600&display=swap');
+
+*{padding: 0; box-sizing: border-box; margin: 0;}
+
+body {
+    background:linear-gradient(#7DC8CC, #F6F6F7);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* nav */
+.header__nav{
+    margin-right: 6rem;
+        li{
+            padding: 1rem;
+            font-family: $font-primary;
+            text-transform: uppercase;
+            a{
+                color: $color-secondary !important;
+                transition: transform .2s;
+                &:hover{
+                    color: $color-primary !important;
+                    background-color: #f6f6f7b9;
+                    padding: 10px;
+                    border-radius: 15px;
+                    transform: scale(1.5);
+                }
+            }
+        }
+}
+/* index */
+.main__content{
+    .main__content__slogan{
+        color:$color-primary;
+        font:{
+            family: $font-secondary;
+            size: 3rem;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 2rem;
+            }
+    }
+    img{
+        margin: auto;
+    }
+}
+/* nosotros */
+.description{
+    .description__text{
+        h1{
+            font:{
+                family: $font-primary;
+                size: 2rem;
+            }
+            color:$color-secondary;
+            text-transform: uppercase;
+        }
+        p{
+            font-family: $font-secondary;
+        }
+    }
+    img{
+        height: 450px;
+        @media screen and (max-width: 500px) {
+            display: none;
+            }
+    }
+}
+/* productos */
+.galery{
+    video{
+        width:80% ;
+    }
+    img{
+        width: 80%;
+    }
+}
+
+.gallery__photos {
+    padding-bottom:20px;
+}
+
+.gallery__photos {
+        img{ padding-bottom:30px;
+            &:hover{
+                box-shadow: 0 0 10px $color-secondary;
+            }
+            
+        }
+}
+
+/* sucursales */
+.sucursales{
+    img{
+        height: 300px;
+        margin-left: 10%;
+    }
+    h1{
+        color:$color-secondary;
+        text-transform: uppercase;
+        font:{
+            family: $font-primary;
+            size: 2rem;
+        }
+    }
+    ul{
+        font-family: $font-secondary;
+        list-style:none;
+        .sucursales__list-title{
+            font-size: 25px;
+        }
+    }
+}
+
+
+/* contacto */
+form{
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.datosPersonales{
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+    @media screen and (max-width: 500px) {
+        margin-left: 20%;
+    }
+    @media screen and (max-width: 400px) {
+        margin-left: 15%;
+    }
+    label{
+        margin-right: 10px;
+    }
+    select{
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        margin-left: 10px;
+    }
+    input {
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+    }
+}
+
+.datosPersonales, .campoComentarios p{
+    font-family: $font-secondary;
+}
+.formulario h1{
+    font:{
+        family: $font-primary;
+        size: 20px;
+    }    
+    text-transform: uppercase;
+    color: $color-secondary; 
+    margin-left: 25%;
+    @media screen and (max-width: 500px) {
+        margin-left: 30%;
+    }
+}
+.campoComentarios{
+    @media screen and (max-width: 500px) {
+        margin-left: 20%;
+    }
+    @media screen and (max-width: 400px) {
+        margin-left: 15%;
+    }
+    p{
+        margin-bottom: 10px;
+    }
+    textarea{   
+        border-radius: 10px;
+        border: none;
+    }
+    button{ 
+        margin: 10px;
+        border: none;
+        border-radius: 20px;
+        padding: 7px;
+        font-family: $font-secondary;
+        height: 30px;
+        width: 60px;
+    }
+}
+
+/* footer */
+
+.fa-instagram, .fa-facebook, .fa-whatsapp{
+    font-size: 30px;
+    padding: 0 2rem 0 2rem;
+    color:$color-primary;
+    transition: transform .2s;
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+
