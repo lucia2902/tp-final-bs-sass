@@ -29,7 +29,7 @@ body {
                     background-color: #f6f6f7b9;
                     padding: 10px;
                     border-radius: 15px;
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -79,11 +79,13 @@ body {
     }
     img{
         width: 80%;
+        @media screen and (max-width: 500px) {
+            width: 60%;
+            }
     }
 }
-
 .gallery__photos {
-    padding-bottom:20px;
+    margin-bottom:20px;
 }
 
 .gallery__photos {
