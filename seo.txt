@@ -1,1 +1,0 @@
-le agregue al meta la etiqueta description y key words, cambie los titulos de la pagina segun el conteido de la misma, modifique el parrafo de nosotros q estaba compuesto por un trexto aleatorio y en el mismo parrafo añadi etiquetas strong para destacar algunas palabras y que el navegador las tome como importantes
