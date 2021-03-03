@@ -73,65 +73,29 @@ body {
     }
 }
 /* productos */
+.galery{
+    video{
+        width:80% ;
+    }
+    img{
+        width: 80%;
+        @media screen and (max-width: 500px) {
+            width: 60%;
+            }
+    }
+}
+.gallery__photos {
+    margin-bottom:20px;
+}
 
-    .product {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin-left: auto;
-      margin-right: auto;
-        .caption {
-            margin-top: 15px;
-      }
-        h6 a {
-            font-family: $font-secondary;
-            color: black;
-      }
-    }
-
-    .product.tumbnail {
-      box-shadow: 0 5px 25px 0 transparent;
-      transition: 0.3s linear;
-      padding-top: 0;
-      & img:hover {
-        box-shadow: 0 5px 25px 0 rgb(255, 255, 255);
-      }
-    }
-
-    .single-product{ 
-        span {
-      display: inline-block;
-        .rating + * {
-        margin-left: 15px;
-      }
-        h1.h1-variant-2 {
-        margin-bottom: 20px;
-      }
-    }
-    .caption{ 
-        span {
-        display: inline-block;
-        vertical-align: middle;
-      }
-        &:before {
-        height: 100%;
-        display: inline-block;
-        vertical-align: middle;
-      }
-    }
-    .caption .price {
-        margin-left: 10.8%;
-        font-family: $font-secondary;
-        @media (max-width: 1199px) {
-            margin-left: 7.8%;
-          }
-          .price {
-            font-size: 15px;
-            font-family: $font-secondary;
-            font-weight: 700;
-            letter-spacing: 0.02em;
-            color: #000000;
-          }
-}   
+.gallery__photos {
+        img{ padding-bottom:30px;
+            &:hover{
+                box-shadow: 0 0 10px $color-secondary;
+            }
+            
+        }
+}
 
 /* sucursales */
 .sucursales{
@@ -237,3 +201,14 @@ form{
 }
 
 /* footer */
+
+.fa-instagram, .fa-facebook, .fa-whatsapp{
+    font-size: 30px;
+    padding: 0 2rem 0 2rem;
+    color:$color-primary;
+    transition: transform .2s;
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+
