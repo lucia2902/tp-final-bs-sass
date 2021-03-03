@@ -30,7 +30,7 @@ body {
   background-color: #f6f6f7b9;
   padding: 10px;
   border-radius: 15px;
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 /* index */
@@ -74,14 +74,9 @@ body {
 .galery img {
   width: 80%;
 }
-@media screen and (max-width: 500px) {
-  .galery img {
-    width: 60%;
-  }
-}
 
 .gallery__photos {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .gallery__photos img {
