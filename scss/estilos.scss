@@ -44,10 +44,14 @@ body {
         }
         @media screen and (max-width: 600px) {
             font-size: 2rem;
+            padding-right: 30px;
             }
     }
     img{
         margin: auto;
+        @media screen and (max-width: 600px) {
+            width: 90%;
+            }
     }
 }
 /* nosotros */
@@ -73,27 +77,34 @@ body {
     }
 }
 /* productos */
-.galery{
-    video{
-        width:80% ;
-    }
-    img{
-        width: 80%;
-    }
-}
-
 .gallery__photos {
-    padding-bottom:20px;
-}
-
-.gallery__photos {
-        img{ padding-bottom:30px;
+    margin-top: 20px;
+    margin-bottom:20px;
+        img{ 
+            margin-bottom: 30px;
+            width: 80%;
+        @media screen and (max-width: 500px) {
+            width: 80%;
+            }
             &:hover{
                 box-shadow: 0 0 10px $color-secondary;
             }
-            
         }
 }
+
+
+.gallery__photos__description{
+    margin-left: 2%;
+    margin-right: 2%;
+    a{
+    font-family: $font-secondary;
+    color: black;
+    &:hover{
+        color: black;
+    }
+}
+}
+
 
 /* sucursales */
 .sucursales{
@@ -174,6 +185,7 @@ form{
     }
 }
 .campoComentarios{
+    margin-left: 12%;
     @media screen and (max-width: 500px) {
         margin-left: 20%;
     }

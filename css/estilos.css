@@ -34,10 +34,14 @@ body {
   font-size: 3rem; }
   @media screen and (max-width: 600px) {
     .main__content .main__content__slogan {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      padding-right: 30px; } }
 
 .main__content img {
   margin: auto; }
+  @media screen and (max-width: 600px) {
+    .main__content img {
+      width: 90%; } }
 
 /* nosotros */
 .description .description__text h1 {
@@ -56,19 +60,26 @@ body {
       display: none; } }
 
 /* productos */
-.galery video {
-  width: 80%; }
-
-.galery img {
-  width: 80%; }
-
 .gallery__photos {
-  padding-bottom: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .gallery__photos img {
+    margin-bottom: 30px;
+    width: 80%; }
+    @media screen and (max-width: 500px) {
+      .gallery__photos img {
+        width: 80%; } }
+    .gallery__photos img:hover {
+      box-shadow: 0 0 10px #F6F6F7; }
 
-.gallery__photos img {
-  padding-bottom: 30px; }
-  .gallery__photos img:hover {
-    box-shadow: 0 0 10px #F6F6F7; }
+.gallery__photos__description {
+  margin-left: 2%;
+  margin-right: 2%; }
+  .gallery__photos__description a {
+    font-family: "raleway", sans-serif;
+    color: black; }
+    .gallery__photos__description a:hover {
+      color: black; }
 
 /* sucursales */
 .sucursales img {
@@ -135,29 +146,27 @@ form {
     .formulario h1 {
       margin-left: 30%; } }
 
-@media screen and (max-width: 500px) {
-  .campoComentarios {
-    margin-left: 20%; } }
-
-@media screen and (max-width: 400px) {
-  .campoComentarios {
-    margin-left: 15%; } }
-
-.campoComentarios p {
-  margin-bottom: 10px; }
-
-.campoComentarios textarea {
-  border-radius: 10px;
-  border: none; }
-
-.campoComentarios button {
-  margin: 10px;
-  border: none;
-  border-radius: 20px;
-  padding: 7px;
-  font-family: "raleway", sans-serif;
-  height: 30px;
-  width: 60px; }
+.campoComentarios {
+  margin-left: 12%; }
+  @media screen and (max-width: 500px) {
+    .campoComentarios {
+      margin-left: 20%; } }
+  @media screen and (max-width: 400px) {
+    .campoComentarios {
+      margin-left: 15%; } }
+  .campoComentarios p {
+    margin-bottom: 10px; }
+  .campoComentarios textarea {
+    border-radius: 10px;
+    border: none; }
+  .campoComentarios button {
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 7px;
+    font-family: "raleway", sans-serif;
+    height: 30px;
+    width: 60px; }
 
 /* footer */
 .fa-instagram, .fa-facebook, .fa-whatsapp {
